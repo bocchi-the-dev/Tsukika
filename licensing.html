@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+  	<title>Tsukika (月華)</title>
+  	<script defer src="src/scripts/index.js"></script>
+  	<link rel="stylesheet" href="src/style/css/common.stylesheet.css" />
+</head>
+<body>
+	<div class="hamburger-menu" onclick="toggleMenu()">
+    	<div></div><div></div><div></div>
+  	</div>
+  	<nav id="sideMenu" class="side-menu">
+        <a href="index.html">Home</a>
+    	<a href="supporteddevices.html">Supported Devices</a>
+    	<a href="usedUtils.html">Used Utilities</a>
+    	<a href="contributors.html">Contributors</a>
+    	<a href="https://github.com/ayumi-aiko/Tsukika">Source Code</a>
+  	</nav>
+  	<main class="content">
+    	<h1>
+      		<span style="font-family: 'Montserrat';">Tsukika (月華) Licensing</span>
+      		<span id="random-emojis" class="sparkle"></span>
+    	</h1>
+        <span style="font-family: 'Montserrat';">
+            Most of the stuff in the repository is under GNU v3 License.
+            <br><br>
+            The others are not and will not fall under the license because those blob/files/binaries are pre-compiled
+			<br>
+			and some of them are not open-sourced.
+        </span>
+  	</main>
+	<script>
+    	const emojis = [
+      		'<span class="sparkle">🌸</span>',
+      		'<span class="sparkle">✨</span>',
+      		'<span class="sparkle">🥰</span>',
+      		'<span class="sparkle">💖</span>'
+    	];
+    	document.addEventListener("DOMContentLoaded", () => {
+      		document.getElementById("random-emojis").innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+    	});
+  	</script>
+</body>
+</html>
